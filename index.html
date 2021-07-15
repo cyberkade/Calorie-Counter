@@ -20,25 +20,41 @@
         </div>
       </nav>
     </header>
-    <h1>Let's Set Your Goals!</h1>
-    <form id="goalForm" action="">
-      <div id="foodEaten" class=""></div>
+    <div class="intro">
+      <div class="intro-div">
+        <p class="intro-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum esse
+          deleniti fugiat maiores sapiente, reiciendis velit, placeat quidem
+          tenetur quos est nam libero autem officia suscipit repellat omnis
+          incidunt commodi?
+        </p>
+      </div>
+      <div class="intro-div">
+        <p class="intro-text second">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum esse
+          deleniti fugiat maiores sapiente, reiciendis velit, placeat quidem
+          tenetur quos est nam libero autem officia suscipit repellat omnis
+          incidunt commodi?
+        </p>
+      </div>
+    </div>
+    <form id="goal-form" action="">
+      <!-- <div id="foodEaten" class=""></div> -->
       <section class="" id="goal-section">
-        <!-- <div id="submit"><button class="submitBtn">Set it!</button></div> -->
-        <div class="">
-          <div class="goalDiv">
+        <div class="goalDiv">
+          <div class="goalText">
             <label class="goalLabel" for="goalCalories"> Calories/day</label
             ><input type="text" name="goalCalories" class="goals" required />
           </div>
-          <div class="goalDiv">
+          <div class="goalText">
             <label class="goalLabel" for="goalCarbs">Carbs/day</label>
             <input type="text" name="goalCarbs" class="goals" required />
           </div>
-          <div class="goalDiv">
+          <div class="goalText">
             <label class="goalLabel" for="goalProteins">Protein/day</label
             ><input type="text" name="goalProteins" class="goals" required />
           </div>
-          <div class="goalDiv">
+          <div class="goalText">
             <label class="goalLabel" for="goalFats">Fat/day</label
             ><input type="text" name="goalFats" class="goals" required />
           </div>
@@ -49,40 +65,36 @@
       </section>
     </form>
 
-    <form id="foodForm" action="">
-      <section class="" id="formInfo">
-        <div class="row">
-          <div class="input">
-            <label for="food">What did you eat?</label>
-            <input type="text" name="food" id="food" />
-          </div>
-          <div class="input">
-            <label for="servings">How many servings?</label>
-            <input type="text" name="servings" id="servings" />
-          </div>
-          <div class="input">
-            <label for="calories">How many calories/serving?</label>
-            <input type="text" name="calories" id="calories" />
-          </div>
-          <div class="">
-            <div class="input nutrients">
-              <label for="carbs">Grams of Carbs/serving?</label>
-              <input type="text" name="carbs" id="carbs" />
-            </div>
-            <div class="input nutrients">
-              <label for="protein">Grams of Protein/serving?</label>
-              <input type="text" name="proteins" id="protein" />
-            </div>
-            <div class="input nutrients">
-              <label for="fat">Grams of Fat/serving?</label>
-              <input type="text" name="fats" id="fat" />
-            </div>
-          </div>
+    <form class="form-section" id="foodForm" action="">
+      <div class="form-div">
+        <div class="input-text">
+          <label for="food">What did you eat?</label>
+          <input type="text" name="food" id="food" />
         </div>
-        <div id="submit">
-          <button class="submitBtn">Calculate</button>
+        <div class="input-text">
+          <label for="servings">How many servings?</label>
+          <input type="text" name="servings" id="servings" />
         </div>
-      </section>
+        <div class="input-text">
+          <label for="calories">How many calories/serving?</label>
+          <input type="text" name="calories" id="calories" />
+        </div>
+        <div class="input-text nutrients">
+          <label for="carbs">Grams of Carbs/serving?</label>
+          <input type="text" name="carbs" id="carbs" />
+        </div>
+        <div class="input-text nutrients">
+          <label for="protein">Grams of Protein/serving?</label>
+          <input type="text" name="proteins" id="protein" />
+        </div>
+        <div class="input-text nutrients">
+          <label for="fat">Grams of Fat/serving?</label>
+          <input type="text" name="fats" id="fat" />
+        </div>
+      </div>
+      <div id="submit">
+        <button class="submitBtn">Calculate</button>
+      </div>
     </form>
     <section>
       <h2 class="hide">Today You Ate:</h2>
