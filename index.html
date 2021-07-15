@@ -64,32 +64,55 @@
         </div>
       </section>
     </form>
-
+    <section class="display-section">
+      <div class="display-div">
+        <div class="display-text">
+          <p class="goal-total">0</p>
+          <p class="goal-set">/2000 Calories</p>
+        </div>
+      </div>
+      <div class="display-div">
+        <div class="display-text">
+          <p class="goal-total">0</p>
+          <p class="goal-set">/200 Proteins</p>
+        </div>
+        <div class="display-text">
+          <p class="goal-total">0</p>
+          <p class="goal-set">/200 Carbs</p>
+        </div>
+      </div>
+      <div class="display-div">
+        <div class="display-text">
+          <p class="goal-total">0</p>
+          <p class="goal-set">/20 Fats</p>
+        </div>
+      </div>
+    </section>
     <form class="form-section" id="foodForm" action="">
       <div class="form-div">
         <div class="input-text">
           <label for="food">What did you eat?</label>
-          <input type="text" name="food" id="food" />
+          <input type="text" name="food" id="food" required />
         </div>
         <div class="input-text">
           <label for="servings">How many servings?</label>
-          <input type="text" name="servings" id="servings" />
+          <input type="text" name="servings" id="servings" required />
         </div>
         <div class="input-text">
           <label for="calories">How many calories/serving?</label>
-          <input type="text" name="calories" id="calories" />
+          <input type="text" name="calories" id="calories" required />
         </div>
-        <div class="input-text nutrients">
+        <div class="input-text">
           <label for="carbs">Grams of Carbs/serving?</label>
-          <input type="text" name="carbs" id="carbs" />
+          <input type="text" name="carbs" id="carbs" required />
         </div>
-        <div class="input-text nutrients">
+        <div class="input-text">
           <label for="protein">Grams of Protein/serving?</label>
-          <input type="text" name="proteins" id="protein" />
+          <input type="text" name="proteins" id="protein" required />
         </div>
-        <div class="input-text nutrients">
+        <div class="input-text">
           <label for="fat">Grams of Fat/serving?</label>
-          <input type="text" name="fats" id="fat" />
+          <input type="text" name="fats" id="fat" required />
         </div>
       </div>
       <div id="submit">
