@@ -1,0 +1,121 @@
+  body {
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  h1 {
+    margin: 0px;
+    padding: 10px;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: rgb(78, 0, 151);
+  }
+  h2 {
+    display: inline-block;
+    color: rgb(78, 0, 151);
+  }
+  #goal-section {
+    color: rgb(78, 0, 151);
+    width: auto;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .goalDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 5px solid rgb(78, 0, 151);
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+  }
+  .goalDiv:first-child {
+    border-left: none;
+  }
+  .goalDiv:hover {
+    font-size: 30px;
+  }
+  .goals {
+    width: 75px;
+    display: block;
+    justify-self: center;
+  }
+  input {
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .goalLabel {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .adjusted {
+    position: relative;
+    top: 145px;
+  }
+  .hide {
+    visibility: hidden;
+  }
+  .setGoals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+    top: 180px;
+  }
+  ul {
+    list-style: none;
+  }
+  .list {
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  #foodEaten {
+    text-align: center;
+  }
+  .hide {
+    display: inline-block;
+    position: fixed;
+  }
+  .submitBtn {
+    background: none;
+    color: black;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  }
+  .submitBtn:hover {
+    color: rgb(78, 0, 151);
+    border-color: rgb(78, 0, 151);
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(78, 0, 151);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+  }
+  .input {
+    color: rgb(78, 0, 151);
+  }
+  input:focus {
+    outline: none;
+  }
+
+  #foodForm {
+    margin-top: 100px;
+    justify-content: space-evenly;
+  }
+  div {
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  #formInfo {
+    justify-content: space-evenly;
+
+  }
+  @media (min-width: 1333px) {
+
+  }
+  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Counter +</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="">
+        <div class="">
+          <h1 class="">Calorie Counter +</h1>
+        </div>
+      </nav>
+    </header>
+    <h1>Let's Set Your Goals!</h1>
+    <form id="goalForm" action="">
+      <div id="foodEaten" class=""></div>
+      <section class="" id="goal-section">
+        <!-- <div id="submit"><button class="submitBtn">Set it!</button></div> -->
+        <div class="">
+          <div class="goalDiv">
+            <label class="goalLabel" for="goalCalories"> Calories/day</label
+            ><input type="text" name="goalCalories" class="goals" required />
+          </div>
+          <div class="goalDiv">
+            <label class="goalLabel" for="goalCarbs">Carbs/day</label>
+            <input type="text" name="goalCarbs" class="goals" required />
+          </div>
+          <div class="goalDiv">
+            <label class="goalLabel" for="goalProteins">Protein/day</label
+            ><input type="text" name="goalProteins" class="goals" required />
+          </div>
+          <div class="goalDiv">
+            <label class="goalLabel" for="goalFats">Fat/day</label
+            ><input type="text" name="goalFats" class="goals" required />
+          </div>
+        </div>
+        <div id="submit">
+          <button class="adjusted submitBtn">Set it!</button>
+        </div>
+      </section>
+    </form>
+
+    <form id="foodForm" action="">
+      <section class="" id="formInfo">
+        <div class="row">
+          <div class="input">
+            <label for="food">What did you eat?</label>
+            <input type="text" name="food" id="food" />
+          </div>
+          <div class="input">
+            <label for="servings">How many servings?</label>
+            <input type="text" name="servings" id="servings" />
+          </div>
+          <div class="input">
+            <label for="calories">How many calories/serving?</label>
+            <input type="text" name="calories" id="calories" />
+          </div>
+          <div class="">
+            <div class="input nutrients">
+              <label for="carbs">Grams of Carbs/serving?</label>
+              <input type="text" name="carbs" id="carbs" />
+            </div>
+            <div class="input nutrients">
+              <label for="protein">Grams of Protein/serving?</label>
+              <input type="text" name="proteins" id="protein" />
+            </div>
+            <div class="input nutrients">
+              <label for="fat">Grams of Fat/serving?</label>
+              <input type="text" name="fats" id="fat" />
+            </div>
+          </div>
+        </div>
+        <div id="submit">
+          <button class="submitBtn">Calculate</button>
+        </div>
+      </section>
+    </form>
+    <section>
+      <h2 class="hide">Today You Ate:</h2>
+      <ul class="foodList"></ul>
+    </section>
+    <script src="calorieCounter.js"></script>
+  </body>
+</html>
