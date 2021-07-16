@@ -83,6 +83,12 @@ const adjustGoals = () => {
   const ateToday = document.querySelector("h2");
   const foodList = document.querySelector("ul");
 
+
+
+
+
+// **************************************************************************************
+  const servings = foodForm.elements.servings.value;
   const nutrients = {
     calories: foodForm.elements.calories.value,
     carbs: foodForm.elements.carbs.value,
@@ -94,10 +100,16 @@ const adjustGoals = () => {
   carbTotal += parseInt(nutrients.carbs * servings);
   proTotal += parseInt(nutrients.proteins * servings);
   fatTotal += parseInt(nutrients.fats * servings);
+// **************************************************************************************
+
+
+
+
+
 
   ateToday.classList.remove("hide");
   food.classList.add("list");
-  food.append(tem);
+  food.append(item);
   foodList.append(food);
 
   const calDiv = document.querySelector(".displayCalProgress");
