@@ -17,23 +17,11 @@ const total = {
 }
 goalForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  toggleHide('.intro');
-  toggleHide('#display-section');
-  toggleHide('#goal-form');
-  toggleHide('#food-form');
-  toggleHide('.list-section');
   appendEl('.append','.goal-total',4);
 });
 foodForm.addEventListener('submit', (e) =>{
   e.preventDefault();
-  listItem();
   updateTotal('.goal-total');
-  foodForm.elements.calories.value = "";
-  foodForm.elements.carbs.value = "";
-  foodForm.elements.proteins.value = "";
-  foodForm.elements.fats.value = "";
-  foodForm.elements.food.value = "";
-  foodForm.elements.servings.value = "";
 
 });
 const listItem = ()=>{
@@ -45,12 +33,8 @@ const listItem = ()=>{
   list.append(listItem);
   }
 const toggleHide = (id) =>{
-  if(isNaN(gCalories) === true ||isNaN(gCarbs) === true ||isNaN(gProteins) === true ||isNaN(gFats) === true){
-    alert('Please Enter Numbers Only!');
-  }else{
-    const display = document.querySelector(id);
-    display.classList.toggle('hide');
-  }
+  const display = document.querySelector(id);
+  display.classList.toggle('hide');
 }
 
 // parent is the element you want the object appended to--- num is the amount of parent objects you want to have the element appended to.
@@ -71,6 +55,11 @@ const appendEl = (parent1, parent2, num,) => {
       pTotal[i].append(0);
       console.log(pTotal);
     }
+    toggleHide('.intro');
+    toggleHide('#display-section');
+    toggleHide('#goal-form');
+    toggleHide('#food-form');
+    toggleHide('.list-section');
   }
 }
 const updateTotal = (parent)=>{
@@ -94,7 +83,15 @@ const updateTotal = (parent)=>{
     pTotal[1].innerText = total.proteins;
     pTotal[2].innerText = total.carbs;
     pTotal[3].innerText = total.fats;
+    listItem();
+    foodForm.elements.calories.value = "";
+    foodForm.elements.carbs.value = "";
+    foodForm.elements.proteins.value = "";
+    foodForm.elements.fats.value = "";
+    foodForm.elements.food.value = "";
+    foodForm.elements.servings.value = "";
   }
+
 }
 // assignGoals('.append','goal-total',4);
 // updateTotal('goal-total',4);
