@@ -449,6 +449,29 @@ label{
 }
 /* end of JS styles*/
 }
+@media(max-height:670px){
+  .goalText{
+    margin-bottom: 20px;
+  }
+}
+@media(max-height:500px){
+  body{
+    height: 150vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+  }
+  .goals{
+    margin-top: 0;
+  }
+  .goalDiv{
+    height: 40vh;
+  }
+  .goalText{
+    margin: 20px 0;
+  }
+}
 @media(max-width:500px){
   p{
     font-size: 1.4rem;
