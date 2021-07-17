@@ -1,31 +1,29 @@
 const goalForm = document.querySelector("#goal-form");
 const foodForm = document.querySelector("#food-form");
-let total = {
+// const servings = foodForm.elements.servings.value;
+// const calories = foodForm.elements.calories.value;
+// const carbs = foodForm.elements.carbs.value;
+// const proteins = foodForm.elements.proteins.value;
+// const fats = foodForm.elements.fats.value;
+// const gCalories = goalForm.elements.goalCal.value;
+// const gCarbs = goalForm.elements.goalCarbs.value;
+// const gProteins = goalForm.elements.goalPro.value;
+// const gFats = goalForm.elements.goalFats.value;
+const total = {
   carbs: 0,
   calories: 0,
   proteins: 0,
   fats: 0,
 }
 goalForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    toggleHide('#display-section');
-    toggleHide('#goal-form');
-    toggleHide('#food-form');
-    toggleHide('.list-section');
-    assignGoals('.append','.goal-total',4);
-    // displayGoals();
-  });
+  e.preventDefault();
+  appendEl('.append','.goal-total',4);
+});
 foodForm.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    listItem();
+  e.preventDefault();
+  updateTotal('.goal-total');
 
-    foodForm.elements.calories.value = "";
-    foodForm.elements.carbs.value = "";
-    foodForm.elements.proteins.value = "";
-    foodForm.elements.fats.value = "";
-    foodForm.elements.food.value = "";
-    foodForm.elements.servings.value = "";
-})
+});
 const listItem = ()=>{
   const userInput = foodForm.elements.food.value;
   const listItem = document.createElement("li");
@@ -40,25 +38,60 @@ const toggleHide = (id) =>{
 }
 
 // parent is the element you want the object appended to--- num is the amount of parent objects you want to have the element appended to.
-const assignGoals = (parent1, parent2, num) => {
 // replace 'goalCal, goalCarbs, etc.' with input's name you want to grab information from'
-  const calories = goalForm.elements.goalCal.value;
-  const carbs = goalForm.elements.goalCarbs.value;
-  const proteins = goalForm.elements.goalPro.value;
-  const fats = goalForm.elements.goalFats.value;
-  const pTotal = document.querySelectorAll(parent2);
-  const pGoal = document.querySelectorAll(parent1);
-  const array = [calories, carbs, proteins, fats] 
-  for(let i = 0; i < num; i++){
-    pGoal[i].append(array[i]);
-    pTotal[i].append(0);
-    console.log(pTotal);
+const appendEl = (parent1, parent2, num,) => {
+  const gCalories = goalForm.elements.goalCal.value;
+  const gCarbs = goalForm.elements.goalCarbs.value;
+  const gProteins = goalForm.elements.goalPro.value;
+  const gFats = goalForm.elements.goalFats.value;
+  if(isNaN(gCalories) === true ||isNaN(gCarbs) === true ||isNaN(gProteins) === true ||isNaN(gFats) === true){
+    alert('Please Enter Numbers Only!');
+  }else{
+    const pTotal = document.querySelectorAll(parent2);
+    const pGoal = document.querySelectorAll(parent1);
+    const array = [gCalories, gCarbs, gProteins, gFats] 
+    for(let i = 0; i < num; i++){
+      pGoal[i].append(array[i]);
+      pTotal[i].append(0);
+      console.log(pTotal);
+    }
+    toggleHide('.intro');
+    toggleHide('#display-section');
+    toggleHide('#goal-form');
+    toggleHide('#food-form');
+    toggleHide('.list-section');
   }
 }
-const updateGoals = ()=>{
+const updateTotal = (parent)=>{
+  const servings = foodForm.elements.servings.value;
+  const calories = foodForm.elements.calories.value;
+  const carbs = foodForm.elements.carbs.value;
+  const proteins = foodForm.elements.proteins.value;
+  const fats = foodForm.elements.fats.value;
+  if(isNaN(calories) === true ||isNaN(carbs) === true ||isNaN(proteins) === true ||isNaN(fats) === true){
+    alert('Please Enter Numbers Only!');
+  }else{
+    const pTotal = document.querySelectorAll(parent);
+    
+    total.calories += calories*servings;
+    total.carbs += carbs*servings;
+    total.proteins += proteins*servings;
+    total.fats += fats*servings;
 
 
+    pTotal[0].innerText = total.calories;
+    pTotal[1].innerText = total.proteins;
+    pTotal[2].innerText = total.carbs;
+    pTotal[3].innerText = total.fats;
+    listItem();
+    foodForm.elements.calories.value = "";
+    foodForm.elements.carbs.value = "";
+    foodForm.elements.proteins.value = "";
+    foodForm.elements.fats.value = "";
+    foodForm.elements.food.value = "";
+    foodForm.elements.servings.value = "";
+  }
 
-  pTotal[i].append(total.calories);
 }
 // assignGoals('.append','goal-total',4);
+// updateTotal('goal-total',4);
