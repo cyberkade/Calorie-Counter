@@ -44,7 +44,7 @@ const appendEl = (parent1, parent2, num,) => {
   const gCarbs = goalForm.elements.goalCarbs.value;
   const gProteins = goalForm.elements.goalPro.value;
   const gFats = goalForm.elements.goalFats.value;
-  if(isNaN(gCalories) === true ||isNaN(gCarbs) === true ||isNaN(gProteins) === true ||isNaN(gFats) === true){
+  if(Number.isNaN(gCalories) || Number.isNaN(gCarbs) || Number.isNaN(gProteins) || Number.isNaN(gFats)){
     alert('Please Enter Numbers Only!');
   }else{
     const pTotal = document.querySelectorAll(parent2);
@@ -68,7 +68,7 @@ const updateTotal = (parent)=>{
   const carbs = foodForm.elements.carbs.value;
   const proteins = foodForm.elements.proteins.value;
   const fats = foodForm.elements.fats.value;
-  if(isNaN(calories) === true ||isNaN(carbs) === true ||isNaN(proteins) === true ||isNaN(fats) === true){
+  if(Number.isNaN(calories) || Number.isNaN(carbs) || Number.isNaN(proteins) || Number.isNaN(fats)){
     alert('Please Enter Numbers Only!');
   }else{
     const pTotal = document.querySelectorAll(parent);
