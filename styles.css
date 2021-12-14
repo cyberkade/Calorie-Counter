@@ -3,19 +3,82 @@
  License: none (public domain)
 */
 
-div, span, applet, object, iframe,
-h3, h4, h5, h6, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+div,
+span,
+applet,
+object,
+iframe,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,33 +87,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html{
-  font-size: 62.5%; 
+html {
+  font-size: 62.5%;
 }
-*{
+* {
   max-width: 100%;
 }
 body {
   margin: 0px;
   padding: 0px;
   font-family: "Josefin Sans", sans-serif;
-  background-color: rgb(33,33,33);
+  background-color: rgb(33, 33, 33);
   font-size: 1.8rem;
 }
 h1 {
@@ -58,13 +133,13 @@ h1 {
   padding: 15px;
   font-size: xx-large;
   text-align: center;
-  color: #FBFFFB;
-  background-color: rgb(55,55,55);
+  color: #fbfffb;
+  background-color: rgb(55, 55, 55);
 }
 h2 {
   display: inline-block;
   text-align: center;
-  color: #FBFFFB;
+  color: #fbfffb;
   width: 25%;
   font-size: 3rem;
   margin: 0 0 50px 0;
@@ -73,10 +148,10 @@ h2 {
   background-color: rgba(128, 123, 123, 0.1);
   border-radius: 20px;
 }
-p{
+p {
   margin: 0;
 }
-.list-section{
+.list-section {
   width: 100vw;
   margin-top: 100px;
   display: flex;
@@ -94,69 +169,69 @@ p{
   background-color: rgba(128, 123, 123, 0.1);
   border-radius: 20px;
 }
-.list:nth-of-type(2){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(2) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
-.list:nth-of-type(5){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(5) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
-.list:nth-of-type(8){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(8) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
-.list:nth-of-type(11){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(11) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
-.list:nth-of-type(14){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(14) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
-.list:nth-of-type(17){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(17) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
-.list:nth-of-type(20){
-  border-left: 3px solid #FBFFFB;
-  border-right: 3px solid #FBFFFB;
+.list:nth-of-type(20) {
+  border-left: 3px solid #fbfffb;
+  border-right: 3px solid #fbfffb;
 }
 .list {
-  color: #FBFFFB;
+  color: #fbfffb;
   font-size: larger;
   font-weight: 700;
   margin: 20px 0px;
   width: 32%;
   text-align: center;
 }
-#goal-form{
-width: 100%;
+#goal-form {
+  width: 100%;
 }
 #goal-section {
   width: 100vw;
   height: auto;
-  color: #FBFFFB;
+  color: #fbfffb;
   display: flex;
   flex-flow: column;
 }
-.intro{
+.intro {
   width: 100%;
   height: 45vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #FBFFFB;
+  color: #fbfffb;
 }
-.intro-div{
-  width:45%;
+.intro-div {
+  width: 45%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.intro-text{
-  background-color: rgb(44,44,44);
+.intro-text {
+  background-color: rgb(44, 44, 44);
   padding: 10%;
   border-radius: 20px;
   box-sizing: border-box;
@@ -171,7 +246,7 @@ width: 100%;
   font-size: 30px;
   position: relative;
 }
-.goalText{
+.goalText {
   width: 20vw;
   height: 10vh;
   display: flex;
@@ -195,7 +270,7 @@ input {
   text-align: center;
   font-size: large;
   border: none;
-  color: rgb(33,33,33);
+  color: rgb(33, 33, 33);
 }
 input:focus {
   box-shadow: 0px 0px 5px #bb86fc;
@@ -206,29 +281,29 @@ input:focus {
 }
 .submitBtn {
   background: none;
-  color: #FBFFFB;
+  color: #fbfffb;
   border: 2px solid;
   padding: 1em 2em;
   font-size: 1em;
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 .submitBtn:hover {
-  color: #FBFFFB;
-  border-color: #FBFFFB;
-  box-shadow: 0 0.5em 0.5em -0.4em #FBFFFB;
+  color: #fbfffb;
+  border-color: #fbfffb;
+  box-shadow: 0 0.5em 0.5em -0.4em #fbfffb;
   transform: translateY(-0.25em);
   cursor: pointer;
 }
 
 /* This will all be applied to created/appended elements through JS */
-.display-section{
+.display-section {
   width: 100%;
   height: 65vw;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-.fats{
+.fats {
   width: 34%;
   height: 34%;
   display: flex;
@@ -236,7 +311,7 @@ input:focus {
   align-items: center;
   justify-content: flex-start;
 }
-.calories{
+.calories {
   width: 34%;
   height: 44%;
   display: flex;
@@ -244,15 +319,15 @@ input:focus {
   align-items: center;
   justify-content: center;
 }
-div.bubble{
+div.bubble {
   width: 250px;
-  height: 250px; 
+  height: 250px;
   font-size: 3rem;
 }
-div .bubble .goal-total{
-  font-size: 6rem;  
+div .bubble .goal-total {
+  font-size: 6rem;
 }
-.both{
+.both {
   width: 90%;
   height: 34%;
   display: flex;
@@ -260,7 +335,7 @@ div .bubble .goal-total{
   justify-content: space-around;
   align-items: flex-end;
 }
-.display-text{
+.display-text {
   width: 75%;
   height: 75%;
   display: flex;
@@ -268,7 +343,7 @@ div .bubble .goal-total{
   justify-content: center;
   align-items: center;
 }
-.goal-style{
+.goal-style {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -276,16 +351,16 @@ div .bubble .goal-total{
   width: 200px;
   height: 200px;
   background-color: rgba(128, 123, 123, 0.1);
-  color: #FBFFFB;
+  color: #fbfffb;
   border-radius: 50%;
   font-size: 2.5rem;
 }
-.goal-total{
+.goal-total {
   font-size: 5rem;
   display: inline-block;
   margin: 10px 0;
 }
-.goal-set{
+.goal-set {
   margin: 10px 0;
 }
 
@@ -299,7 +374,7 @@ div .bubble .goal-total{
   justify-content: space-evenly;
   align-items: center;
 }
-.form-div{
+.form-div {
   width: 75vw;
   height: 80%;
   display: flex;
@@ -314,14 +389,14 @@ div .bubble .goal-total{
   justify-content: space-evenly;
   font-size: 2rem;
   align-items: center;
-  color: #FBFFFB;
+  color: #fbfffb;
   width: 33%;
   height: 50%;
 }
 input:focus {
   outline: none;
 }
-#submit{
+#submit {
   width: 100%;
   height: 15vh;
   display: flex;
@@ -339,24 +414,24 @@ input:focus {
 }
 
 /* start of WIDTH responsive styling */
-@media(max-width: 900px) {
-  h2{
+@media (max-width: 900px) {
+  h2 {
     width: 55%;
   }
-  input{
+  input {
     width: 75%;
   }
-  .intro-text{
+  .intro-text {
     text-align: center;
   }
-  .goalDiv{
+  .goalDiv {
     width: 100%;
     height: 35vh;
     display: flex;
     flex-flow: column wrap;
     margin: 0 auto;
   }
-  .goalText{
+  .goalText {
     width: 40vw;
     height: 10vh;
     display: flex;
@@ -380,58 +455,58 @@ input:focus {
     width: 100%;
     text-align: center;
   }
-  .list-section{
+  .list-section {
     margin-top: 20px;
   }
   /* This will all be applied to created/appended elements through JS */
-  .display-section{
+  .display-section {
     width: 100%;
     height: 75vw;
   }
-  .fats{
+  .fats {
     width: 34%;
     height: 34%;
   }
-  .calories{
+  .calories {
     width: 34%;
     height: 44%;
   }
-  div.bubble{
+  div.bubble {
     width: 150px;
-    height: 150px; 
+    height: 150px;
     font-size: 3rem;
   }
-  div .bubble .goal-total{
-    font-size: 4.5rem;  
+  div .bubble .goal-total {
+    font-size: 4.5rem;
   }
-  div .bubble .goal-set{
-    font-size:2.6rem;  
+  div .bubble .goal-set {
+    font-size: 2.6rem;
   }
-  .both{
+  .both {
     width: 100%;
     height: 54%;
   }
-  .display-text{
+  .display-text {
     width: 100%;
     height: 100%;
   }
-  .goal-style{
+  .goal-style {
     width: 125px;
     height: 125px;
   }
-  .goal-total{
+  .goal-total {
     font-size: 3rem;
     margin: 10px 0;
   }
-  .goal-set{
+  .goal-set {
     margin: 10px 0;
     font-size: 2rem;
     text-align: center;
   }
-  #food-form{
+  #food-form {
     margin-top: 70px;
   }
-  .form-div{
+  .form-div {
     width: 100%;
     margin: 15px;
     padding: 25px;
@@ -439,55 +514,55 @@ input:focus {
     background-color: rgba(128, 123, 123, 0.1);
     border-radius: 20px;
   }
-  label{
+  label {
     text-align: center;
     font-size: 1.6rem;
   }
-  .input-text{
+  .input-text {
     margin: 0 0px;
   }
   /* end of JS styles*/
 }
-@media(max-width:500px){
-  p{
+@media (max-width: 500px) {
+  p {
     font-size: 1.4rem;
   }
-  .goalLabel{
+  .goalLabel {
     font-size: 2.6rem;
   }
-  .goal-style{
+  .goal-style {
     width: 100px;
     height: 100px;
   }
-  .goal-total{
+  .goal-total {
     font-size: 3rem;
     margin: 0;
   }
-  .goal-set{
+  .goal-set {
     margin: 5px 0;
     font-size: 1.5rem;
     text-align: center;
   }
-  .goals{
+  .goals {
     width: 70px;
     height: 20px;
     font-size: 2rem;
   }
-  div.bubble{
+  div.bubble {
     width: 125px;
-    height: 125px; 
+    height: 125px;
     font-size: 2rem;
   }
-  div .bubble .goal-total{
-    font-size: 3.5rem;  
+  div .bubble .goal-total {
+    font-size: 3.5rem;
   }
-  div .bubble .goal-set{
-    font-size:2rem;  
+  div .bubble .goal-set {
+    font-size: 2rem;
   }
-  #food-form{
+  #food-form {
     margin-top: 70px;
   }
-  .form-div{
+  .form-div {
     width: 100%;
     margin: 15px;
     padding: 25px;
@@ -495,31 +570,31 @@ input:focus {
     background-color: rgba(128, 123, 123, 0.1);
     border-radius: 20px;
   }
-  label{
+  label {
     text-align: center;
     font-size: 1.2rem;
   }
-  .input-text{
+  .input-text {
     margin: 0 0px;
   }
-  input{
+  input {
     margin: 0;
   }
 }
-@media(max-width:380px){
-  .list{
+@media (max-width: 380px) {
+  .list {
     font-size: 1.6rem;
-  } 
-  #display-section{
+  }
+  #display-section {
     height: 40vh;
   }
-  .display-text{
+  .display-text {
     width: 100%;
   }
-  .calories{
+  .calories {
     width: 100%;
   }
-  .form-div{
+  .form-div {
     padding: 5px;
   }
   .foodList {
@@ -528,61 +603,60 @@ input:focus {
     padding: 20px;
   }
   .list {
-    color: #FBFFFB;
+    color: #fbfffb;
     font-size: 2rem;
     width: 50%;
   }
-  .list:nth-of-type(2){
+  .list:nth-of-type(2) {
     border-left: none;
     border-right: none;
   }
-  .list:nth-of-type(5){
+  .list:nth-of-type(5) {
     border-left: none;
     border-right: none;
   }
-  .list:nth-of-type(8){
+  .list:nth-of-type(8) {
     border-left: none;
     border-right: none;
   }
-  .list:nth-of-type(11){
+  .list:nth-of-type(11) {
     border-left: none;
     border-right: none;
   }
-  .list:nth-of-type(14){
+  .list:nth-of-type(14) {
     border-left: none;
     border-right: none;
   }
-  .list:nth-of-type(17){
+  .list:nth-of-type(17) {
     border-left: none;
     border-right: none;
   }
-  .list:nth-of-type(20){
+  .list:nth-of-type(20) {
     border-left: none;
     border-right: none;
   }
 }
 
 /* start of HEIGHT responsive styling */
-@media(max-height:670px){
-  .goalText{
+@media (max-height: 670px) {
+  .goalText {
     margin-bottom: 20px;
   }
 }
-@media(max-height:500px){
-  body{
+@media (max-height: 500px) {
+  body {
     height: 150vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-
   }
-  .goals{
+  .goals {
     margin-top: 0;
   }
-  .goalDiv{
+  .goalDiv {
     height: 40vh;
   }
-  .goalText{
+  .goalText {
     margin: 20px 0;
   }
 }
