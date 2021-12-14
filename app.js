@@ -1,14 +1,6 @@
 const goalForm = document.querySelector("#goal-form");
 const foodForm = document.querySelector("#food-form");
-// const servings = foodForm.elements.servings.value;
-// const calories = foodForm.elements.calories.value;
-// const carbs = foodForm.elements.carbs.value;
-// const proteins = foodForm.elements.proteins.value;
-// const fats = foodForm.elements.fats.value;
-// const gCalories = goalForm.elements.goalCal.value;
-// const gCarbs = goalForm.elements.goalCarbs.value;
-// const gProteins = goalForm.elements.goalPro.value;
-// const gFats = goalForm.elements.goalFats.value;
+
 const total = {
   carbs: 0,
   calories: 0,
