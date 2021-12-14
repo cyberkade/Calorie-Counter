@@ -14,70 +14,78 @@ const total = {
   calories: 0,
   proteins: 0,
   fats: 0,
-}
-goalForm.addEventListener('submit', (e) => {
+};
+goalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  appendEl('.append','.goal-total',4);
+  appendEl(".append", ".goal-total", 4);
 });
-foodForm.addEventListener('submit', (e) =>{
+foodForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  updateTotal('.goal-total');
-
+  updateTotal(".goal-total");
 });
-const listItem = ()=>{
+const listItem = () => {
   const userInput = foodForm.elements.food.value;
   const listItem = document.createElement("li");
   const list = document.querySelector("ul");
   listItem.classList.add("list");
   listItem.append(userInput);
   list.append(listItem);
-  }
-const toggleHide = (id) =>{
+};
+const toggleHide = (id) => {
   const display = document.querySelector(id);
-  display.classList.toggle('hide');
-}
+  display.classList.toggle("hide");
+};
 
-// parent is the element you want the object appended to--- num is the amount of parent objects you want to have the element appended to.
-// replace 'goalCal, goalCarbs, etc.' with input's name you want to grab information from'
-const appendEl = (parent1, parent2, num,) => {
+// parent is the element you want the object appended to, while num is the amount of parent objects you want to have the element appended to.
+
+const appendEl = (parent1, parent2, num) => {
   const gCalories = goalForm.elements.goalCal.value;
   const gCarbs = goalForm.elements.goalCarbs.value;
   const gProteins = goalForm.elements.goalPro.value;
   const gFats = goalForm.elements.goalFats.value;
-  if(isNaN(gCalories) === true ||isNaN(gCarbs) === true ||isNaN(gProteins) === true ||isNaN(gFats) === true){
-    alert('Please Enter Numbers Only!');
-  }else{
+  if (
+    Number.isNaN(gCalories) ||
+    Number.isNaN(gCarbs) ||
+    Number.isNaN(gProteins) ||
+    Number.isNaN(gFats)
+  ) {
+    alert("Please Enter Numbers Only!");
+  } else {
     const pTotal = document.querySelectorAll(parent2);
     const pGoal = document.querySelectorAll(parent1);
-    const array = [gCalories, gCarbs, gProteins, gFats] 
-    for(let i = 0; i < num; i++){
+    const array = [gCalories, gCarbs, gProteins, gFats];
+    for (let i = 0; i < num; i++) {
       pGoal[i].append(array[i]);
       pTotal[i].append(0);
       console.log(pTotal);
     }
-    toggleHide('.intro');
-    toggleHide('#display-section');
-    toggleHide('#goal-form');
-    toggleHide('#food-form');
-    toggleHide('.list-section');
+    toggleHide(".intro");
+    toggleHide("#display-section");
+    toggleHide("#goal-form");
+    toggleHide("#food-form");
+    toggleHide(".list-section");
   }
-}
-const updateTotal = (parent)=>{
+};
+const updateTotal = (parent) => {
   const servings = foodForm.elements.servings.value;
   const calories = foodForm.elements.calories.value;
   const carbs = foodForm.elements.carbs.value;
   const proteins = foodForm.elements.proteins.value;
   const fats = foodForm.elements.fats.value;
-  if(isNaN(calories) === true ||isNaN(carbs) === true ||isNaN(proteins) === true ||isNaN(fats) === true){
-    alert('Please Enter Numbers Only!');
-  }else{
+  if (
+    Number.isNaN(calories) ||
+    Number.isNaN(carbs) ||
+    Number.isNaN(proteins) ||
+    Number.isNaN(fats)
+  ) {
+    alert("Please Enter Numbers Only!");
+  } else {
     const pTotal = document.querySelectorAll(parent);
-    
-    total.calories += calories*servings;
-    total.carbs += carbs*servings;
-    total.proteins += proteins*servings;
-    total.fats += fats*servings;
 
+    total.calories += calories * servings;
+    total.carbs += carbs * servings;
+    total.proteins += proteins * servings;
+    total.fats += fats * servings;
 
     pTotal[0].innerText = total.calories;
     pTotal[1].innerText = total.proteins;
@@ -91,7 +99,4 @@ const updateTotal = (parent)=>{
     foodForm.elements.food.value = "";
     foodForm.elements.servings.value = "";
   }
-
-}
-// assignGoals('.append','goal-total',4);
-// updateTotal('goal-total',4);
+};
